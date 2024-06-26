@@ -6,6 +6,8 @@ import Search from "./search";
 import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
+import Image from 'next/image'
+
 
 export const NAVLINKS = [
   {
@@ -20,10 +22,7 @@ export const NAVLINKS = [
     title: "Guides",
     href: "#",
   },
-  {
-    title: "Community",
-    href: "#",
-  },
+ 
   {
     title: "Blog",
     href: "#",
@@ -85,8 +84,18 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <ParenthesesIcon className="w-6 h-6 text-muted-foreground" />
-      <h2 className="text-md font-bold">template/docs</h2>
+      {/* <ParenthesesIcon className="w-6 h-6 text-muted-foreground" /> */}
+      {/* <h2 className="text-md font-bold">Interview Guru</h2> */}
+      <Image
+        src="/logo2.png"
+        width={120}
+        height={100}
+        alt="Picture of the author"
+      />
+
+
+
+
     </Link>
   );
 }

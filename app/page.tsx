@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex sm:min-h-[91vh] min-h-[88vh] flex-col items-center justify-center text-center px-2 py-8">
       <Link
-        href="https://github.com/nisabmohd/Documentation-Template"
+        href="https://github.com/patilsp/interviewguru"
         target="_blank"
         className="mb-5 sm:text-lg flex items-center gap-2 underline underline-offset-4"
       >
@@ -15,12 +15,12 @@ export default function Home() {
         <MoveUpRightIcon className="w-4 h-4 font-extrabold" />
       </Link>
       <h1 className="text-3xl font-bold mb-4 sm:text-7xl">
-        An example app built using Next.js and server components.
+        Welcome to InterviewGuru
       </h1>
       <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground">
-        This feature-packed documentation template, built with Next.js, offers a
-        sleek and responsive design, perfect for all your project documentation
-        needs.
+        A comprehensive platform for all your tech interview preparation needs.
+        Explore various programming languages, see top interview questions and answers, and find the best sites to apply for jobs.
+      
       </p>
       <div className="flex flex-row items-center gap-5">
         <Link
@@ -40,9 +40,9 @@ export default function Home() {
           Customize
         </Link>
       </div>
-      <span className="flex flex-row items-center gap-2 text-zinc-400 text-md mt-7 -mb-12 max-[800px]:mb-12">
+      {/* <span className="flex flex-row items-center gap-2 text-zinc-400 text-md mt-7 -mb-12 max-[800px]:mb-12">
         <TerminalIcon className="w-4 h-4 mr-1" /> ~ npx this-library-name@latest
-      </span>
+      </span> */}
     </div>
   );
 }
