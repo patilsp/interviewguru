@@ -20,8 +20,8 @@ export function Leftbar() {
         {ROUTES.map(({ href, items, title }) => {
           return (
             <div className="flex flex-col gap-3 mt-5" key={href}>
-              <h4 className="font-medium text-sm">{title}</h4>
-              <div className="flex flex-col gap-3 text-sm dark:text-neutral-300/85 text-neutral-800 ml-0.5">
+              <h4 className="font-bold text-sm">{title}</h4>
+              <div className="flex flex-col gap-3 text-sm dark:text-neutral-300/85 text-neutral-800 ml-1">
                 {items.map((subItem) => {
                   const key = `/docs/${href}${subItem.href}`;
                   return (
@@ -79,7 +79,7 @@ export function SheetLeftbar() {
               return (
                 <div className="flex flex-col gap-3 mt-5" key={href}>
                   <h4 className="font-medium">{title}</h4>
-                  <div className="flex flex-col gap-3 dark:text-neutral-300/85 text-neutral-800 ml-0.5">
+                  <div className="flex flex-col gap-3 dark:text-neutral-300/85 text-neutral-800 ml-1">
                     {items.map((subItem) => {
                       const key = `/docs/${href}${subItem.href}`;
                       return (

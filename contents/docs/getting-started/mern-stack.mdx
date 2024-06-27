@@ -1,0 +1,122 @@
+---
+title: What is the MERN stack?
+description: MongoDB, Express, React, and Node. js.
+---
+
+
+A technology stack can be custom (developers can choose the technologies depending on their project requirements) or pre-built (where the technologies have been pre-decided).
+
+MERN is a pre-built technology stack based on JavaScript technologies. MERN stands for MongoDB, Express, React, and Node, after the four key technologies that make up the stack.
+
+- **MongoDB:** A document database used to store data.
+- **Express(.js):** A web application framework for Node.js.
+- **React(.js):** A client-side JavaScript framework for building user interfaces.
+- **Node(.js):** A JavaScript runtime environment that executes JavaScript code outside a web browser.
+
+Express and Node make up the middle (application) tier. Express.js is a server-side web framework, and Node.js is the popular and powerful JavaScript server platform. Regardless of which variant you choose, ME(RVA)N is the ideal approach to working with JavaScript and JSON, all the way through.
+
+## How does the MERN stack work?
+The MERN architecture allows you to easily construct a three-tier architecture (front end, back end, database) entirely using JavaScript and JSON.
+
+ <img src="/mern-stack.png" alt="tech-stack" width="800" height="300" />
+
+
+## React.js Front-End
+The top tier of the MERN stack is 
+[React.js](https://react.dev/), the declarative JavaScript framework for creating dynamic client-side applications in HTML. React lets you build complex interfaces through simple components, connect them to data on your back-end server, and render them as HTML.
+
+React's strong suit is handling stateful, data-driven interfaces with minimal code and hassle, and it has all the features you'd expect from a modern web framework: great support for forms, error handling, events, lists, and more.
+
+## Express.js and Node.js server tier 
+The next level down is the Express.js server-side framework, running inside a 
+Node.js
+ server. Express.js bills itself as a “fast, unopinionated, minimalist web framework for Node.js,” and that is indeed exactly what it is. Express.js has powerful models for URL routing (matching an incoming URL with a server function), and handling HTTP requests and responses.
+
+By making XML HTTP Requests (XHRs), GETs, or POSTs from your React.js front end, you can connect to Express.js functions that power your application. Those functions, in turn, use MongoDB's Node.js drivers, to access and update data in your MongoDB database.
+
+## MongoDB database tier
+If your application stores any data (user profiles, content, comments, uploads, events, etc.), then you're going to want a database that's just as easy to work with as React,
+[Express](https://www.mongodb.com/resources/products/compatibilities/express)
+, and Node.js.
+
+That's where MongoDB comes in: JSON documents created in your React.js front end can be sent to the Express.js server, where they can be processed and (assuming they're valid) stored directly in MongoDB for later retrieval. Again, if you're building in the cloud, you'll want to look at 
+[MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database). If you're looking to set up your own MERN stack, read on!
+
+## Example of a simple request/response using the MERN stack
+A typical HTTP request (from a client) performs one of the 4 operations - POST, GET, PUT, DELETE corresponding to the four database operations - Create, Read, Update and Delete (CRUD) respectively. To cater to these requests, the Express.js provides request and response objects that store the required parameters. The HTTPrequest stores the data provided by the end user, and the HTTP response stores the data that is retrieved from the database.
+
+With the 
+[MongoDB Node.js](https://www.mongodb.com/resources/languages/mongodb-with-nodejs)
+ driver, you can easily connect your MongoDB deployments to the application in a few simple steps.
+
+One of the most important features of MERN stack is that all the technologies store data in the same format.
+
+The front-end layer, React, stores data as a JavaScript object, the backend (application) layer uses JavaScript code, and the data layer MongoDB stores data in BSON (Binary JavaScript ON) format. Express converts data between JS and JSON using the .json() method.
+
+Node.js allows developers to write backend (server-side) application logic in JavaScript. Although Node.js provides core http modules, writing the same in Express provides a cleaner code experience. Express also provides powerful routing features to get the required data from the correct endpoint - another place where developers need not write explicit code for routing.
+
+Since the code is written in the same language (JavaScript) from end-to-end, a lot of time that would otherwise go in conversions during transition from layer to layer, is saved.
+
+Let us say a customer (client) wants to update his mobile number through an online portal. The frontend, built using React.js, would have a form where the user can enter the mobile number. React uses the "useState" hook to set the mobile number entered by the customer into the request parameter.
+
+The Express.js code takes the mobile number from the http put request, maps it to the data model schema of the application, and applies the corresponding method (for example, findByIdAndUpdate()) to perform the update operation. The response is then sent over the http response object with a success/failure message.
+
+ <img src="/mern-stack2.png" alt="tech-stack" width="800" height="300" />
+
+
+## MERN stack vs Full stack development
+MERN stack is a type of full stack, where the technology layers are pre-defined. A full stack developer has a higher learning curve, as they need to be adept in multiple technologies, whereas a MERN stack developer needs to know only the corresponding technologies. Some prominent differences below will help you choose between a custom full stack and MERN stack, depending on your project requirements:
+
+## MERN Stack
+
+1. **Technology Stack**: MongoDB (database), Express.js (backend framework), React (frontend framework), Node.js (runtime environment).
+   
+2. **Single Language**: Entirely JavaScript-based stack, allowing developers to use the same language for both frontend and backend development.
+
+3. **Modular Architecture**: Each component (MongoDB, Express.js, React, Node.js) can be swapped or upgraded independently, offering flexibility.
+
+4. **Rapid Development**: Facilitates quick prototyping and development of scalable web applications, leveraging React's component-based architecture.
+
+5. **Community Support**: Strong community support and extensive documentation for each component, aiding development and troubleshooting.
+
+## Full Stack Development
+
+1. **Versatility**: Involves proficiency in both frontend (UI/UX) and backend (server-side logic, databases) development.
+
+2. **Broad Skill Set**: Requires knowledge of various technologies such as frontend frameworks (React, Angular, Vue.js), backend languages (Node.js, Python, Java), and databases (SQL, NoSQL).
+
+3. **Holistic Approach**: Enables developers to build end-to-end solutions, from user interface design to server-side logic and database management.
+
+4. **Problem Solving**: Involves tackling diverse challenges across the entire application stack, from performance optimization to security considerations.
+
+5. **Career Flexibility**: Offers opportunities in various roles, including full-stack developers, software engineers, technical architects, and more.
+
+
+## When to choose the MERN stack?
+If your project timelines are strict and requirements are well-defined, MERN stack is an ideal choice, that would save time and cost, and help developers get onboard quickly, as they have to focus on learning only one technology. Also, long-term maintenance of a project could be easier with MERN stack due to structured, well-established approach and extensive documentation.
+ <img src="/mean-vs-mern.jpg" alt="tech-stack" width="800" height="300" />
+
+MERN stack works well for any possible use case or project requirement that you have, as all of the components (MERN) offer powerful capabilities and features. The only time when you cannot choose MERN stack is when you want to use technologies other than JavaScript.
+
+## Why choose the MERN stack?
+Let's start with MongoDB, the document database at the root of the MERN stack. MongoDB was designed to store JSON data natively. (It technically uses a binary version of JSON called 
+[BSON](https://www.mongodb.com/resources/basics/json-and-bson?_ga=2.61430124.1771085450.1719381440-22643185.1686814927)
+.) Everything from its command line interface to its query language is built on JSON and JavaScript.
+
+MongoDB works extremely well with Node.js, and makes storing, manipulating, and representing JSON data at every tier of your application incredibly easy. For cloud-native applications, 
+MongoDB Atlas
+ makes it even easier by giving you an auto-scaling MongoDB cluster on the cloud provider of your choice with just a few button clicks.
+
+Express.js (running on Node.js) and React.js make the JavaScript/JSON application MERN full stack, well, full. Express.js is a server-side application framework that wraps HTTP requests and responses and makes it easy to map URLs to server-side functions. React.js is a front-end JavaScript framework for building interactive user interfaces in HTML and communicating with a remote server.
+
+The combination means that JSON data flows naturally from front to back, making it easier to build on and reasonably simple to debug. Plus, you only have to know one programming language, and the JSON document structure, to understand the whole system!
+
+MERN is the stack of choice for today's web developers looking to move quickly, particularly for those with React.js experience.
+
+## MERN use cases
+Like any web stack, you can build whatever you want in MERN — though it's ideally suited for cases that are JSON-heavy, cloud-native, and that have dynamic web interfaces. Examples include workflow management, news aggregation, to-do apps and calendars, and interactive forums or social products — and whatever else you can dream up!
+
+## Summary
+MERN Stack aims to simplify the entire tech stack, by pre-determining the technologies. Developers and designers need not go through the pain of deciding what technologies should be used for which business case. Further, they need not learn or hire multiple people who know the different technologies, or put the onus on a single person. With a MERN stack, anyone can 
+build simple or complex applications
+by just knowing a handful of technologies. This makes production faster and saves overall cost, without compromising on scalability, performance and security.
