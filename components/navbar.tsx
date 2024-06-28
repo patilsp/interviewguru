@@ -11,11 +11,11 @@ import Image from 'next/image'
 
 export const NAVLINKS = [
   {
-    title: "Documentation",
+    title: "Home",
     href: `/docs/${page_routes[0].href}`,
   },
   {
-    title: "Examples",
+    title: "References",
     href: "#",
   },
   {
@@ -58,7 +58,7 @@ export function Navbar() {
             <Search />
             <div className="flex -space-x-1">
               <Link
-                href="https://github.com/nisabmohd/Docs-Stater-Template"
+                href="#"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />

@@ -1,17 +1,26 @@
-import { buttonVariants } from "@/components/ui/button";
-import Link from "next/link";
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function NotFound() {
   return (
-    <div className="container min-h-[99vh] px-2 py-8 flex flex-col gap-3 items-center">
-      <div>
-        <h2 className="text-5xl font-bold">404</h2>
-        <p className="text-muted-foreground">Page not found</p>
-      </div>
+    <div className="mt-10 flex flex-col justify-center">
+       
+      <h1 className="text-red-800 font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-center dark:text-white">Not Found</h1>     
+      <p className="mx-auto my-4 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-400"> Could not find requested resource </p>
 
-      <Link href="/" className={buttonVariants({})}>
-        Back to homepage
-      </Link>
+
+       <div className='flex w-full justify-center p-1'>
+          <Image
+            src='/error.png'
+            width={400}
+            height={460}
+            alt='error loading'
+            className='object-contain'
+          />
+        </div>
+        <div className='w-100 mt-4 mb-4 flex justify-center'>
+          <Link href="/" className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring inline-flex h-8 items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50" >Return Home</Link>
+        </div>
     </div>
-  );
+  )
 }

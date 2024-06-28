@@ -5,6 +5,7 @@ export const ROUTES = [
     href: "getting-started",
     items: [
       { title: "Introduction", href: "/introduction" },
+      { title: "Prepare For Interview", href: "/job-interview" },
       { title: "Technology Stack", href: "/tech-stack" },
       { title: "MERN Stack", href: "/mern-stack" },
       { title: "MEAN Stack", href: "/mean-stack" },
@@ -15,6 +16,7 @@ export const ROUTES = [
   },
   {
     title: "Front-End",
+    href: "front-end",
     items: [
       { title: "HTML", href: "/html" },
       { title: "CSS", href: "/css" },
